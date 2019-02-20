@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_seats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.proud.edward.qless.SeatsActivity"
+    tools:showIn="@layout/activity_seats">
+
+    <Button
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:id="@+id/seatButton"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:text="A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seatButton"
+        android:layout_alignStart="@+id/seatButton"
+        android:layout_marginTop="28dp"
+        android:id="@+id/rowButton" />
+
+    <TextView
+        android:text="Seat Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="101dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Enter your seat number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="5dp"
+        android:textSize="30sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:paddingBottom="15dp"
+        android:textAlignment="viewStart"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/rowButton"
+        android:layout_alignBottom="@+id/rowButton"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:text="Gate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/gateButton"
+        android:layout_alignBottom="@+id/gateButton"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gateButton"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/rowButton" />
+
+</RelativeLayout>

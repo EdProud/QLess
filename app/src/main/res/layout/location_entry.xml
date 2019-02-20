@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/red_ripple"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="5dp"
+        android:textSize="30sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:paddingBottom="15dp"
+        android:textAlignment="viewStart"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/locationName" />
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/colorAccent"-->
+    <!--/>-->
+</LinearLayout>
+
+</FrameLayout>
